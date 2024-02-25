@@ -1,10 +1,16 @@
 // group33_shopping_list_app/lib/main.dart
 import 'package:flutter/material.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'firebase_options.dart'; // Make sure this file exists in your project and has the correct path
 import 'package:group33_shopping_list_app/screens/group_list_screen.dart';
 import 'package:group33_shopping_list_app/screens/shopping_list_screen.dart';
 import 'package:group33_shopping_list_app/screens/tax_calculator_screen.dart';
 
-void main() {
+void main() async {
+  WidgetsFlutterBinding.ensureInitialized(); // Ensure plugin services are initialized
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform, // Use the Firebase configuration specific to this platform
+  );
   runApp(MyApp());
 }
 
@@ -51,7 +57,7 @@ class _SplashScreenState extends State<SplashScreen> {
               Text(
                 'ShopWise TaxTally',
                 style: TextStyle(
-                  color: Colors.black, // Changed color to black
+                  color: Colors.black,
                   fontWeight: FontWeight.bold,
                   fontSize: 30.0,
                 ),
@@ -60,7 +66,7 @@ class _SplashScreenState extends State<SplashScreen> {
               Text(
                 'By: Eric Grigor & Ryan Lee',
                 style: TextStyle(
-                  color: Colors.black, // Changed color to black
+                  color: Colors.black,
                   fontSize: 20.0,
                 ),
               ),

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "821628289384",
+    "project_id": "group33-shopping-list-app",
+    "storage_bucket": "group33-shopping-list-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:821628289384:android:164be34a51b27ad5f696dd",
+        "android_client_info": {
+          "package_name": "com.example.group33_shopping_list_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBvFWo_m5-y9MIHJhc_mhSOQTjFLz-c66M"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
